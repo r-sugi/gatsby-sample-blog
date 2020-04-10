@@ -25,6 +25,7 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "prettier": "^1.19.1"
   },
   "homepage": "https://github.com/W3Layouts/Delog#readme",
@@ -37,8 +38,10 @@
     "url": "git+https://github.com/W3Layouts/Delog.git"
   },
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "build": "gatsby build --prefix-paths",
+    "dev": "gatsby develop",
+    "push": "gh-pages -d public -b master",
+    "deploy": "yarn build && yarn push",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
