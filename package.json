@@ -38,10 +38,10 @@
     "url": "git+https://github.com/W3Layouts/Delog.git"
   },
   "scripts": {
-    "build": "gatsby build --prefix-paths",
     "dev": "gatsby develop",
-    "push": "gh-pages -d public -b master",
     "deploy": "yarn build && yarn push",
+    "build": "gatsby build && cp CNAME ./public",
+    "push": "gh-pages -d public",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

@@ -6,7 +6,6 @@
 
 module.exports = {
   /* Your site config here */
-  pathPrefix: `/gatsby-sample-blog`,
   siteMetadata: {
     title: `Delog`,
     description: `A starter blog demonstrating what Gatsby can do.`,
