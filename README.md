@@ -17,7 +17,7 @@ You need to change repo URL to your own `repo` at delog/static/admin/config.yml,
 
 ## Creating Github OAuth Client ID
 * Goto Github [Developer Settings](https://github.com/settings/developers)
-* **New OAuth** 
+* **New OAuth**
 * Enter Application name
 * Homepage URL as Netlify URL
 * And **Authorization callback URL** to `https://api.netlify.com/auth/done`)
@@ -25,7 +25,7 @@ You need to change repo URL to your own `repo` at delog/static/admin/config.yml,
 
 ## Accessing Netlify CMS Admin
 * Goto your Netlify site admin
-* Goto **Access Control** > **OAuth** then **Install Provider** you need to select provider as `Github` as add `Client ID` and `Secret` 
+* Goto **Access Control** > **OAuth** then **Install Provider** you need to select provider as `Github` as add `Client ID` and `Secret`
 * Your Netlify CMS is ready. Goto you netlify site URL and append `/admin/`. for example `example.netlify.com/admin/`, You will see login with Github button.
 
 ## Managing Blog Posts in Netlify CMS
@@ -49,3 +49,10 @@ For issues,feedback on enhancement or sharing your new awesome website built wit
 ### Upcoming Features Roadmap
 - [ ] Pagination for Blog
 - [ ] Socail Icons
+
+## prepare of github settings of GitHub Pages
+* Source
+choose 'gh-pages branch'
+
+* Custom domain
+set specific custom domain (example: blog.r-sugi.cloud)
