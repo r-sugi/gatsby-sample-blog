@@ -39,9 +39,7 @@
   },
   "scripts": {
     "dev": "gatsby develop",
-    "deploy": "yarn build && yarn push",
     "build": "gatsby build && cp CNAME ./public",
-    "push": "gh-pages -d public",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
